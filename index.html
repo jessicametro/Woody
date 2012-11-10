@@ -5,7 +5,7 @@
 	<head>
 		<title>Woody</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="flexslider.css" type="text/css">
+		<!--<link rel="stylesheet" href="flexslider.css" type="text/css">-->
 		<link rel="stylesheet" href="css/styles.css" type="text/css"/>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script src="flexslider/jquery.flexslider.js"></script>
@@ -19,6 +19,13 @@
 					keyboard: true
 					//controlNav: "thumbnails"
 				});
+				
+				$(".element").hover( function() {
+				  console.log("Hovering over it now");
+				  $(".flexslider").flexslide(slide);
+				}, function() {
+				  console.log("Moving away from it now");
+				});
 			});
 		</script>
 		
@@ -27,7 +34,7 @@
 				$('.flexslider').flexslider();
 			});
 		</script>-->
-		<script src="js/scripts.js"></script>
+		<!--<script src="js/scripts.js"></script>-->
 	</head>
 	
 	<body>
@@ -35,12 +42,12 @@
 		
 		<div id="titles">			
 			<ul>
-				<li>Work One</li>
-				<li>Work Two</li>
-				<li>Work Three</li>
-				<li>Work Four</li>
-				<li>Work Five</li>
-				<li>Work Six</li>
+				<li class="controlSlider one">Work One</li>
+				<li class="controlSlider two">Work Two</li>
+				<li class="controlSlider three">Work Three</li>
+				<li class="controlSlider four">Work Four</li>
+				<li class="controlSlider five">Work Five</li>
+				<li class="controlSlider six">Work Six</li>
 			</ul>
 		</div>
 		

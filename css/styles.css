@@ -49,6 +49,9 @@ table {
 
 /* end of css reset */
 
+
+
+
 #titles {
 	position: relative;
 	float: left;
@@ -59,3 +62,7 @@ table {
 	position: absolute;
 	left: 300px;
 }
+
+.slides li {
+  display: none;
+ }

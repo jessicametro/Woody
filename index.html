@@ -20,7 +20,21 @@
 					//controlNav: "thumbnails"
 				});
 				
-				$(".element").hover( function() {
+				$(".one").hover( function() {
+				  console.log("Hovering over it now");
+				  $(".flexslider").flexslide(slide);
+				}, function() {
+				  console.log("Moving away from it now");
+				});
+				
+				$(".two").hover( function() {
+				  console.log("Hovering over it now");
+				  $(".flexslider").flexslide(slide);
+				}, function() {
+				  console.log("Moving away from it now");
+				});
+				
+				$(".three").hover( function() {
 				  console.log("Hovering over it now");
 				  $(".flexslider").flexslide(slide);
 				}, function() {

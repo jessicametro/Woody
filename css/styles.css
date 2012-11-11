@@ -61,6 +61,7 @@ table {
 #slider {
 	position: absolute;
 	left: 300px;
+	width: 650px;
 }
 
 .slides li {
